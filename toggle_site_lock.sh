@@ -4,7 +4,7 @@
 # Bind this to a keyboard shortcut for easy control
 #
 
-SCRIPT_PATH="$HOME/scripts/usb_site_lock.py"
+SCRIPT_PATH="PATHTOSCRIPT"
 
 if pgrep -f "usb_site_lock.py" > /dev/null; then
     # Running - stop it
