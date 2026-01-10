@@ -80,6 +80,39 @@ If your system has:
 Remove USB → sites blocked
 Insert USB → sites unblocked
 
+### Optional: `toggle_site_lock.sh`
+
+This repo includes a small helper script, `toggle_site_lock.sh`, which lets do the following with a command that you can link to a keyboard shortcut:
+- Start the USB monitor
+- Stop the USB monitor
+- Restart it
+- Check its status
+
+It cannot:
+- Force unblock without the USB key
+- Override the UUID check
+- Act as a “cheat switch” (That role is handled only by emergency_reset.sh.)
+
+It’s purely a convenience tool — the main project works fine without it.
+
+If you want to use it:
+
+1. Make it executable:
+
+   ```bash
+   chmod +x toggle_site_lock.sh
+   ```
+
+2. Open the script and make sure the path to `usb_site_lock.py` matches where you cloned the repo.
+
+3. Run it:
+
+   ```bash
+   ./toggle_site_lock.sh
+   ```
+
+You’ll be prompted for your sudo password, since the script modifies `/etc/hosts`.
+
 ---
 
 ## Safety
