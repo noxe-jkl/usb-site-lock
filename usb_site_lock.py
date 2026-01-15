@@ -27,7 +27,7 @@ from pathlib import Path
 
 # Your USB drive's UUID - find it with: lsblk -f
 # or: sudo blkid | grep -i uuid
-USB_UUID = "YOUR-USB-UUID"
+USB_UUID = "YOUR-USB-UUID-HERE"
 
 # Websites to block (add more as needed)
 BLOCKED_SITES = [
