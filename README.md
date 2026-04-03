@@ -77,8 +77,7 @@ If your system has:
    sudo python3 usb_site_lock.py
    ```
 
-Remove USB → sites blocked
-Insert USB → sites unblocked
+Remove USB → sites blocked → Insert USB → sites unblocked
 
 ### Optional: `toggle_site_lock.sh`
 
